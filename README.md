@@ -6,12 +6,12 @@ Another example is available at [http://github.com/StephaneDucasse](https://gith
 
 ## Website generation
 
-Load Foliage
+Load EcstatiK
 
 ```
 Metacello new
-	baseline: 'Foliage';
-	repository: 'github://Ducasse/Foliage:master/src';
+	baseline: 'EcstatiK';
+	repository: 'github://pillar-markup/EcstatiK:master/src';
 	onConflict: [ :ex | ex useIncoming ];
 	onUpgrade: [ :ex | ex useIncoming ];
 	load.
@@ -21,8 +21,8 @@ Metacello new
 ```
 p := FOPublisher new. 
 p baseUri: 'https://tintin.github.io'.
-p sourcePath: '/Users/ducasse/Test2/FoliageSample/site'.
-p targetPath: /Users/ducasse/Test2/FoliageSample/generated'.
+p sourcePath: '/Users/ducasse/Test2/EcstatiKSample/site'.
+p targetPath: /Users/ducasse/Test2/EcstatiKSample/generated'.
 p publish.
 ```
 
