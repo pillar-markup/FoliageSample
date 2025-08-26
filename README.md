@@ -8,9 +8,9 @@ Another example is available at [http://github.com/StephaneDucasse](https://gith
 
 Load Foliage
 
-```
+```st
 Metacello new
-	baseline: 'EcstatiK';
+	baseline: 'Foliage';
 	repository: 'github://pillar-markup/Foliage:v2.1.0/src';
 	onConflict: [ :ex | ex useIncoming ];
 	onUpgrade: [ :ex | ex useIncoming ];
@@ -18,11 +18,11 @@ Metacello new
 ```
 
 
-```
+```st
 p := FOPublisher new. 
 p baseUri: 'https://tintin.github.io'.
 p sourcePath: '/Users/ducasse/Test2/FoliageSample/site'.
-p targetPath: /Users/ducasse/Test2/FoliageSample/generated'.
+p targetPath: '/Users/ducasse/Test2/FoliageSample/generated'.
 p publish.
 ```
 
@@ -30,7 +30,7 @@ p publish.
 
 The following script is an example how to deploy manually a site on github pages
 
-```
+```bash
 #!/bin/bash
 
 SOURCES_BRANCH=${1:-source}
