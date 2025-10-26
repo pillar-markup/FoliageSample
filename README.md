@@ -4,9 +4,11 @@ This project is a little sample to illustrate Foliage.
 Another example is available at [http://github.com/StephaneDucasse](https://github.com/StephaneDucasse/StephaneDucasse.github.io)
 
 
-## Website generation
+## Manual website generation
 
-Load Foliage
+In the near future we will explain how to setup a github action to do this automatically.
+
+### Load Foliage
 
 ```
 Metacello new
@@ -17,6 +19,7 @@ Metacello new
 	load.
 ```
 
+### Generate the site
 
 ```
 p := FOPublisher new. 
@@ -26,9 +29,17 @@ p targetPath: /Users/ducasse/Test2/FoliageSample/generated'.
 p publish.
 ```
 
+### Command line
+
+```
+pharovm pharo.image clap --source site --target generated
+```
+
 ## Website deployment
 
-The following script is an example how to deploy manually a site on github pages
+The following script is an example how to deploy manually a site on github pages.
+It supposes that the source is in the source branch and commits to master are published HTML.
+
 
 ```
 #!/bin/bash
@@ -67,3 +78,4 @@ git push
 git checkout $SOURCES_BRANCH
 git checkout $SOURCES_BRANCH -- generated
 ```
+
