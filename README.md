@@ -10,10 +10,10 @@ In the near future we will explain how to setup a github action to do this autom
 
 ### Load Foliage
 
-```
+```st
 Metacello new
 	baseline: 'Foliage';
-	repository: 'github://Ducasse/Foliage:master/src';
+	repository: 'github://pillar-markup/Foliage:v2.1.3/src';
 	onConflict: [ :ex | ex useIncoming ];
 	onUpgrade: [ :ex | ex useIncoming ];
 	load.
@@ -21,11 +21,11 @@ Metacello new
 
 ### Generate the site
 
-```
+```st
 p := FOPublisher new. 
 p baseUri: 'https://tintin.github.io'.
 p sourcePath: '/Users/ducasse/Test2/FoliageSample/site'.
-p targetPath: /Users/ducasse/Test2/FoliageSample/generated'.
+p targetPath: '/Users/ducasse/Test2/FoliageSample/generated'.
 p publish.
 ```
 
@@ -41,7 +41,7 @@ The following script is an example how to deploy manually a site on github pages
 It supposes that the source is in the source branch and commits to master are published HTML.
 
 
-```
+```bash
 #!/bin/bash
 
 SOURCES_BRANCH=${1:-source}
@@ -78,4 +78,3 @@ git push
 git checkout $SOURCES_BRANCH
 git checkout $SOURCES_BRANCH -- generated
 ```
-
