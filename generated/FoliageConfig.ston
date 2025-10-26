@@ -1,6 +1,0 @@
-Foliage {
-	#baseUri: 'http://tintin.github.io',
-	#blogs: [ 
-		'news': 'News'
-	]
-}
