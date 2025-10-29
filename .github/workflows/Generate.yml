@@ -20,23 +20,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      - name: Build Foliage
-        run: |
-          git clone https://github.com/pillar-markup/foliage.git
-          ./foliage/scripts/build.sh
-
-      - name: Execute Foliage
-        run: |
-          ./build/foliage --source site --target generated
-
-      - uses: actions/upload-artifact@v5
+      - uses: pillar-markup/Foliage@master
         with:
-          name: foliage-generated
-          path: generated
+          source: source
           retention-days: 5
  
   deploy:
