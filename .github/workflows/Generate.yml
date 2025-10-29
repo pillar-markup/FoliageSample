@@ -22,7 +22,7 @@ jobs:
 
       - uses: pillar-markup/Foliage@master
         with:
-          source: source
+          source: site
           retention-days: 5
  
   deploy:
