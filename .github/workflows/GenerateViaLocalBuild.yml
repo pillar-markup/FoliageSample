@@ -21,21 +21,21 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Build Foliage
-         run: |
+        run: |
            git clone https://github.com/pillar-markup/foliage.git
            ./foliage/scripts/build.sh
 
-       - name: Execute Foliage
-         run: |
+      - name: Execute Foliage
+        run: |
            ./build/foliage --source site --target generated
 
-       - uses: actions/upload-artifact@v5
-         with:
+      - uses: actions/upload-artifact@v5
+        with:
             name: foliage-generated
             path: generated
 			
-        - name: AddNoJekill
-          run: touch generated/.nojekyll
+      - name: AddNoJekill
+        run: touch generated/.nojekyll
 
   deploy:
     runs-on: ubuntu-latest
