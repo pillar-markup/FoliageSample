@@ -16,3 +16,4 @@ I'm a journalist. I joined several international expeditions with my smart dog M
 - L'ile Noire
 - Le Sceptre d'Ottokar
 - Le Crabe aux pinces d'or
+- Objectif lune
