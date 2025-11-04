@@ -1,4 +1,4 @@
 
 <br>
 <p>
-<a href="/index.html">Home</a> | <a href="https://www.tintin.com/fr">Tintin.com</a>
+<a href="{{{webRootPrefix}}}/index.html">Home</a> | <a href="https://www.tintin.com/fr">Tintin.com</a>
