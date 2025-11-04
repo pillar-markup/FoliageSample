@@ -24,6 +24,10 @@ jobs:
         with:
           source: site
           retention-days: 5
+
+       - name: AddNoJekill
+         run: touch generated/.nojekyll
+     
  
   deploy:
     runs-on: ubuntu-latest
