@@ -1,6 +1,6 @@
 Foliage {
 	#baseUri : 'http://tintin.github.io',
-	#webRootPrefix : 'FoliageSample',
+	#webRootPrefix : '/FoliageSample',
 	#blogs: [ 
 		'news': 'News'
 	]
