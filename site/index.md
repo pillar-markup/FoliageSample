@@ -9,6 +9,7 @@
 ## Current responsibilities
 
 I'm a journalist. I joined several international expeditions with my smart dog Milou. 
+My best friends is Captain Haddock.
 
 ## Some Adventures
 
