@@ -14,7 +14,7 @@ My best friends are Captain Haddock and Prof. Tournesol.
 ## Some Adventures
 
 - L'Oreille cassée
-- L'ile Noire
+- L'ile noire
 - Le Sceptre d'Ottokar
-- Le Crabe aux pinces d'or
+- Le crabe aux pinces d'or
 - Objectif lune
