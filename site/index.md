@@ -9,7 +9,7 @@
 ## Current responsibilities
 
 I'm a journalist. I joined several international expeditions with my smart dog Milou. 
-My best friends is Captain Haddock and Prof. Tournesol.
+My best friends are Captain Haddock and Prof. Tournesol.
 
 ## Some Adventures
 
